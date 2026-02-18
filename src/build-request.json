@@ -1,0 +1,65 @@
+{
+  "kind": "build_request",
+  "title": "Keep the UI accent color orange (replace current gold accents)",
+  "projectName": "DishMatch",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Update the app’s accent styling so the interface remains orange (replace the current gold accent tokens/usages with an orange accent), while keeping the existing dark theme, typography, and layout unchanged.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "現状オレンジで"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Primary/accent UI elements that currently render with the 'gold' accent (e.g., star ratings, filter sheet borders/buttons, badges) render with an orange accent instead.",
+        "No new UI features are introduced; only color styling changes.",
+        "All user-visible text remains in English (no new Japanese UI strings are added)."
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Ensure the star rating visuals (including half-star gradient fill) use the orange accent consistently.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "現状オレンジで"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Filled stars and half-star gradient use the same orange accent color as the rest of the app.",
+        "Unfilled stars remain visually subdued on the dark background (no change in behavior, only consistent accent color)."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not edit files under frontend/src/components/ui (compose existing components instead).",
+    "Do not edit any paths listed as immutable in SYSTEM_CONTEXT."
+  ],
+  "nonGoals": [
+    "Changing backend data models or Motoko canister logic.",
+    "Adding new pages, flows, or features beyond updating the accent color styling."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

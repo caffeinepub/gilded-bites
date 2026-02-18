@@ -1,0 +1,49 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-update-the-app-s-accent-styling-so-the-interface-remains-orange-replace-the-current-gold-accent-tokens-usages-with-an-orange-accent-while-keeping-the-existing-dark-theme-typography-and-layout-unchanged",
+      "featureTitle": "Update the app’s accent styling so the interface remains orange (replace the current gold accent tokens/usages with an orange accent), while keeping the existing dark theme, typography, and layout unchanged.",
+      "files": [
+        "frontend/src/components/discovery/AdPlaceholderCard.tsx",
+        "frontend/src/components/discovery/FiltersSheet.tsx",
+        "frontend/src/components/discovery/RestaurantCard.tsx",
+        "frontend/src/index.css",
+        "frontend/src/pages/DiscoveryPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "http-outcalls@3.0.0",
+        "authorization@4.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-ensure-the-star-rating-visuals-including-half-star-gradient-fill-use-the-orange-accent-consistently",
+      "featureTitle": "Ensure the star rating visuals (including half-star gradient fill) use the orange accent consistently.",
+      "files": [
+        "frontend/src/components/discovery/StarRating.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "http-outcalls@3.0.0",
+        "authorization@4.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

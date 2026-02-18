@@ -1,2 +1,3 @@
-# gilded-bites
-Exported from Caffeine project: Gilded Bites
+## 
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`
